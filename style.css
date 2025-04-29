@@ -46,6 +46,13 @@ button:hover {
   background-color: #e64980;
 }
 
+#mensagem {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Animação para os corações flutuantes */
 .hearts {
   position: absolute;
   top: 0;
@@ -63,6 +70,7 @@ button:hover {
   user-select: none;
 }
 
+/* Definindo a animação de flutuação dos corações */
 @keyframes float {
   0% {
     transform: translateY(100vh) scale(0.8);
@@ -74,5 +82,27 @@ button:hover {
   100% {
     transform: translateY(-10vh) scale(1.2);
     opacity: 0;
+  }
+}
+
+.hearts span {
+  font-size: 2rem;
+  animation: float 5s infinite;
+  color: #ff3366;
+  user-select: none;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
