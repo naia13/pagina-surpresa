@@ -3,7 +3,7 @@ function mostrarSurpresa() {
       "Eu te amo mais do que palavras podem dizer.",
       "Você faz meus dias mais felizes.",
       "Obrigado por estar ao meu lado. ❤️",
-      "Vamos comemorar muitos outros aniversários juntos!"
+      "Vamos comemorar muitos outros anos juntas!"
     ];
     const indice = Math.floor(Math.random() * frases.length);
     document.getElementById("mensagem").innerText = frases[indice];
